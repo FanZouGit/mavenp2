@@ -11,10 +11,10 @@ public class TestBankAccount {
 		Assert.assertEquals(5.0, amount);	
 	}
 	@Test
-	public void testDebitI()
+	public void testNoDebit()
 	{	
 		BankAccount account = new BankAccount(10);
-		double amount = account.debit(21);
+		double amount = account.debit(25);
 		Assert.assertEquals(10.0, amount);	
 	}
 }
