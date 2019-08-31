@@ -14,7 +14,7 @@ public class TestBankAccount {
 	public void testNoDebit()
 	{	
 		BankAccount account = new BankAccount(10);
-		double amount = account.debit(25);
+		double amount = account.debit(5);
 		Assert.assertEquals(10.0, amount);	
 	}
 }
