@@ -30,6 +30,12 @@
           <goals>
             <goal>prepare-agent</goal>
           </goals>
+          <configuration>
+            <append>true</append>
+            <destFile>${sonar.jacoco.reportPath}</destFile>
+            <!-- Sets the VM argument line used when unit tests are run. -->
+            <propertyName>surefireArgLine</propertyName>
+          </configuration>
         </execution>
         <execution>
           <id>post-unit-test</id>
