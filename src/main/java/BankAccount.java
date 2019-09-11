@@ -13,6 +13,10 @@ public class BankAccount {
       {
         return -1;
       }
+      if ( balance*3 < amount)
+      {
+        return -2;
+      }
     }
 
     balance -= amount;
