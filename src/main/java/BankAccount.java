@@ -8,7 +8,7 @@ public class BankAccount {
 
   public double debit(double amount) {
     if (balance < amount) {
-      amount = balance;
+      amount = 0;
       if ( balance*2 < amount)
       {
         return -1;
